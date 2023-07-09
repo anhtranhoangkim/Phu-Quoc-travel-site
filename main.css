@@ -157,6 +157,7 @@ body {
 .slide {
     position: relative;
     padding-top: 50%;  
+    min-height: 680px;
 }
 
 .slide::before {
@@ -165,6 +166,7 @@ body {
     top: 0;
     left: 0;
     width: 100%;
+    min-height: 680px;
     height: 100%;
     background: url(./assets/img/slide.jpg) top center / cover no-repeat;
     filter: brightness(90%);
@@ -219,12 +221,12 @@ body {
 .slide-selection {
     margin-top: 75px;
     display: flex;
-    width: 35%;
     flex-direction: row;
     justify-content: space-between;
 }
 
 .slide-selection__wrap {
+    margin: 0 8px;
     height: 115px;
     width: 120px;
     background-color: rgba(0, 0, 0, 0.3);
@@ -262,7 +264,6 @@ body {
 }
 
 .logo {
-    width: 5%;
     margin: auto 0;
 }
 
@@ -271,7 +272,8 @@ body {
 }
 
 .nav-list {
-    width: 60%;
+    max-width: 800px;
+    width: 80%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -280,7 +282,7 @@ body {
 
 .nav-item > a {
     display: block;
-    padding: 45px 30px;
+    padding: 45px 20px;
     text-decoration: none;
     color: var(--white-color);
     font-size: 1.4rem;
@@ -360,6 +362,7 @@ body {
     background-color: var(--blue-color);
     z-index: 2;
     display: flex;
+    justify-content: space-evenly;
     flex-direction: column;
     align-items: center;
     opacity: 0;
@@ -368,10 +371,6 @@ body {
   
 .destinations-wrap:hover .destinations-place__overlay {
     display: flex;
-}
-
-.destinations-place__overlay > h3 {
-    padding: 84px 0 24px;
 }
 
 .destinations-place__overlay > div {
@@ -389,7 +388,6 @@ body {
 }
 
 .view-place-btn {
-    margin-top: 32px;
     width: 55%;
     color: var(--blue-color);
 }
@@ -424,7 +422,7 @@ body {
 }
 
 .banner-holiday-btn {
-    width: 370px;
+    width: 350px;
     color: var(--red-color)
 }
 
@@ -446,13 +444,12 @@ body {
     text-align: left;
 }
 
-.beaches-wrap > h2 > u:after {
+.beaches-wrap > h1 > u:after {
     background-color: var(--blue-color);
 }
 
 .beaches-wrap > p {
     padding: 10px 0;
-    width: 350px;
 }
 
 .beaches-price {
@@ -680,10 +677,6 @@ body {
     color: var(--gray-color);
 }
 
-.toggle-text {
-    visibility: hidden;
-}
-
 .packages-travel__section-price {
 
 }
@@ -725,13 +718,6 @@ body {
 
 .plus-text:hover {
     cursor: pointer;
-}
-
-.plus-text:hover .toggle-text {
-    visibility: visible !important;
-    width: 100px;
-    height: 100px;
-    background-color: #da717b;
 }
 
 /* Contact */
